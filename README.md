@@ -1,22 +1,38 @@
 # Úkol: Interaktivní galerie obrázků se zobrazením polohy na mapě
 
-## Požadavky
+## Akceptační kritéria
 
-- Validní a přístupný kód (W3C a WCAG).
-- Optimalizace pro rychlost načítání a efektivní práce s daty.
-- Použití plně statických souborů.
-- HTML5, čisté CSS, možnost použití frameworku nebo preprocesoru.
-- Preferováno použití Leaflet pro mapové podklady.
-- Pro práci s metadaty doporučujeme knihovnu `exifr`.
+### Výsledný kód
 
-## Vizuál a Chování
+1. Je validní dle W3C.
+2. Je přístupný dle WCAG 2.1.
+3. Je responzivní do telefonu až po desktop.
+4. Je optimalizovaný pro výkon a rychlé načítání (efektivní práce s daty).
+5. Je statický a splňuje funkční požadavky.
 
-- Responzivní design od mobilních telefonů po desktopy.
-- Levá část (2/3) galerie fotografií, pravá část mapa.
-- Na telefonu zobrazení v jednom sloupci. Galerie v horní části zabírá maximálně 70% viewportu, pod ní mapa vyplňující zbývající prostor.
-- Mapa dynamicky zobrazuje polohy všech obrázků ve viewportu.
-- Volitelně: Pokud data obsahují informace o směru (azimutu), zobrazte je.
-- Volitelně: Zobrazte cestu nebo trasu mezi jednotlivými body jako simulaci fyzického přemísťování mezi lokacemi.
+### Vizuál
+
+- **Desktop** — levý sloupec (šířka 2/3) obsahuje galerii obrázků a pravý mapu.
+- **Telefon** — nahoře galerie (70% viewportu) a pod ní mapa vyplňující zbývající prostor.
+
+### Funkční požadavky
+
+1. Galerie funguje a zobrazuje se v posledních dvou verzích nejrozšířenějších prohlížečů.
+2. Mapa dynamicky zobrazuje polohy všech obrázků ve viewportu.
+
+Volitelně:
+
+- Pokud data obsahují informace o směru (azimutu), zobrazte je.
+- Zobrazte cestu nebo trasu mezi jednotlivými body jako simulaci fyzického přemísťování mezi lokacemi.
+
+## Poznámky
+
+> Zamyslete se nad tím, jak bude uživatel galerii ovládat. Jaká jsou očekávání uživatele od galerie obrázků.
+
+- Preferováno použití HTML5, CSS, JS…
+- Volitelně: použití frameworků, preprocesorů atp.
+- Doporučení: knihovna `leaflet` pro mapové podklady.
+- Doporučení: knihovna `exifr` pro práci s metadaty.
 
 ### Příklad sloučených metadat dat
 
